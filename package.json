@@ -4,9 +4,9 @@
   "main": "index.js",
   "dependencies": {
     "discord.js": "^14.11.0",
-    "distube": "^4.0.0",
-    "@distube/ytdl-core": "^4.0.0",
-    "@distube/yt-dlp": "^4.0.0"
+    "distube": "^4.2.0",
+    "@distube/ytdl-core": "^4.0.2",
+    "@distube/yt-dlp-exec": "^1.0.0"
   },
   "scripts": {
     "start": "node index.js"
