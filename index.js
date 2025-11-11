@@ -1,3 +1,5 @@
+require('dotenv').config(); // .env প্রথমে load হবে
+
 const { Client, GatewayIntentBits } = require('discord.js');
 const { DisTube } = require('distube');
 
@@ -29,7 +31,4 @@ client.on('messageCreate', async message => {
   if (command === 'stop') distube.stop(message);
 });
 
-client.login(process.env.BOT_TOKEN);
-
-require('dotenv').config();
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN); // পরিবর্তন করতে হলে MD Shozon স্যারের থেকে অনুমতি নিয়ে নিবেন ন
